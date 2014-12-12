@@ -1,0 +1,19 @@
+{
+	"strict":true,
+	"node": true,
+	"smarttabs":true,
+	"multistr":true,
+	"laxbreak":true,
+	"expr":true,
+	"sub":true,
+	"newcap":false,
+	"maxdepth":10,
+	"maxstatements": 100,
+	"maxcomplexity": 15,
+	"immed":true,
+	"latedef":true,
+	"undef":true,
+	"trailing":true,
+	"eqeqeq":true,
+	"devel":false
+}

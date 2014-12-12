@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+		<title> Streaming • Todo NO-MVC</title>
+		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+	</head>
+	<body>
+		<section id="todoapp">
+			<header id="header">
+				<h1>todos</h1>
+				<input id="new-todo" placeholder="What needs to be done?" autofocus>
+			</header>
+			<section id="main" class="hidden">
+				<input id="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul id="todo-list"></ul>
+			</section>
+			<footer id="footer" class="hidden" >
+				<span id="todo-count"><strong data="active"></strong> item<span data="active-plural"></span> left</span>
+				<ul id="filters">
+					<li>
+						<a class="selected" href="#/">All</a>
+					</li>
+					<li>
+						<a href="#/active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed">Completed</a>
+					</li>
+				</ul>
+				<button id="clear-completed" class="hidden" >Clear completed (<span data="completed"></span>)</button>
+			</footer>
+		</section>
+		<footer id="info">
+			<p>Double-click to edit a todo</p>
+			<p>Written by <a href="https://github.com/addyosmani">Maurice Schoenmakers</a></p>
+			<p>Example for <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+		<template id="item-template">
+			<li data="id" ><div class="view">
+					<input data="completed" class="toggle" type="checkbox" >
+					<label data="title" ></label>
+					<button data="id" class="destroy" ></button>
+				</div>
+				<input data="title" class="edit" value="" >
+			</li>
+		</template>
+		<!--table style="font-size: 0.5em;" >
+			<tr><td valign="top" id="log-frontend" style="width:50%;"></td><td valign="top" id="log-backend" ></td></tr>
+		</table-->
+		<script src="js/events.js"></script>
+		<script src="js/todo.js"></script>
+	</body>
+</html>
